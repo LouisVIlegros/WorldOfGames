@@ -1,0 +1,65 @@
+{
+  "UI": {
+    "welcome_interface": {
+      "prompt": {
+        "PlayerName": "Hey what'your name ?\n",
+        "ChooseGame": {
+          "Prompt": "Please choose your Game by typing its number\n",
+          "NotDigitError": "Please type only the number of the game, if you want the firts gaame juste type 1\n",
+          "NotExistrror": "Please select only an existing game number, for exemple do not type 5 if there is no such number in the game list\n",
+          "GameChoosen": "Okay you choose the game {}\n"
+        },
+        "Game_no_available": "Oh nooooo ! We are sorry, the game {} is not available yet",
+        "ChooseLevel": {
+          "Prompt": "Now choose your difficulty level between 1 to 5\n",
+          "NotDigitError": "Please type only a number\n",
+          "NotExistrror": "Please type only a number beteew 1 to 5\n"
+        }
+      },
+      "welcome_message": "\n\nHello {} and welcome to the world of game \nHere you can find many cool game to play \nPlease chosse a game to play : \n",
+      "start_message": "Game : {}\nLevel: {}\n------Let's Go playiing !!!------"
+    },
+    "Games": [
+      {
+        "Title": "Guess Game",
+        "SubTitle": "Guess a number and see if you choose like the computer  ",
+        "prompt": {
+          "start": "Hey, I choose a number between 0 and {} try to guess it !\n",
+          "NotDigitError": "Please try to guess only a number...not a letter or any other charachter\n",
+          "NotExistrror": "Please only type a number that is included between 0 and {}\n"
+        }
+      },
+      {
+        "Title": "Memory Game",
+        "SubTitle": "a sequence of numbers will appear for 1 seconde and you have to guess it back",
+        "prompt": {
+          "start": "Hey, These are {} numbers between 0 and 101  you must remeber to win. You have only 0.7 seconds to remember them Ready ? Go !  !\n",
+          "NotDigitError": "Please try to guess only a number...not a letter or any other charachter\n",
+          "NotExistrror": "Please only type a number that is included between 0 and {}\n",
+          "Numbers": [
+            "first",
+            "second",
+            "third",
+            "fourth",
+            "fifth and last"
+          ],
+          "Success" : "Bravo : you remember alllll the numbers",
+          "Fail" : "Oh no : you did not remeber one of the numbers"
+        }
+      },
+      {
+        "Title": "Currency Roulette",
+        "Currency_URL" : "https://api.exchangeratesapi.io/latest?symbols=USD,ILS",
+        "SubTitle": "Try and guess the value of a random amount of USD in ILS",
+        "prompt" : {
+          "AskFromUser" : "Hey, this is an amount in US Dollars : {} \n",
+          "GuessFromUser" : "Try to guess what is the equivalent in shekels ... : \n",
+          "NotDigitError": "Please try to guess only a number...not a letter or any other charachter\n",
+          "NotExistrror": "Please only type a number that is included between 0 and {}\n",
+          "win" : "Bravo ! you found almost the exactly ammount which was : {} ILS",
+          "loose" : "Ohhhh no ! the exactly amount was : {} and you was not enough closer! you loose!"
+        }
+      }
+    ]
+  }
+}
